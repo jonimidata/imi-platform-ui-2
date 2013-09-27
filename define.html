@@ -1,34 +1,89 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Define Report
 ---
+<div class="container">
 
+	<div class="row">
+		<div class="col-md-3 pull-right">
+			<div id="filters">
+				<h4><span class="glyphicon glyphicon-cog"></span> Define Your Report</h4>
 
-       <div id="filter-bar" data-spy="affix" data-offset-top="200">
-          <div class="container">
-            <div class="row">
-            <div class="col-sm-3 col-md-2" id="market-summary">
-              <h5>Market Summary</h5>
-              <h2>$234M</h2>
-              <p><small>19K Locations</small></p>
-            </div>
-            <div class="col-sm-6 col-md-8" id="filter-summary">
-              <h5>Included in this Report</h5>
-              <ul>
-                <li class="filter-description">Abrasives, Brushes, Chemicals</li>
-                <li class="filter-description">35 Counties, AZ, CO, UT</li>
-                <li class="filter-description">All Company Sizes; SIC 2000-2599, 2800-3299, 3333-7777</li>
-              </ul>
-            </div>
-            <div class="col-sm-3 col-md-2 text-center">
-              <a data-toggle="modal" href="#myModal" id="filter-update-btn" class="btn btn-block btn-primary update-btn">Modify Report</a>
-            </div>
-            </div>
-          </div>
-        </div>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" href="#collapseOne">
+          #1: Products
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <p style="line-height: 1.7em;">
+        	Abrasives, Chemicals, Brushes... 
+        </p>
+        <a data-toggle="modal" href="#productModal" class="btn btn-sm btn-default btn-block btn"><span class="glyphicon glyphicon-plus"></span>Edit</a> 
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" href="#collapseTwo">
+          #2: Geography
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+        <p style="line-height: 1.7em;">
+        	<span class="label label-default">US - CO - Boulder x</span> 
+        	<span class="label label-default">US - CO - Denver x</span> 
+        	<span class="label label-default">US - CO - Weld x</span> 
+        	<span class="label label-default">US - AZ - Pima x</span> 
+        	<span class="label label-default">US - AZ - Maricopa x</span> 
+        </p>
+        <a data-toggle="modal" href="#geoModal" class="btn btn-sm btn-block btn"><span class="glyphicon glyphicon-plus"></span> Add More</a> 
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" href="#collapseThree">
+          #3: Customer Segment
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" href="#collapseThree">
+          #4: Company Size
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
 
-        <br>
-        <div class="container">
+			</div>
+		</div>
+		<div class="col-md-9">
+			<h1>Report Name Here</h1>
+
+			<h3>Market Summary: $12M across 19K Locations</h3>
 
 
 <h3>Estimated Demand by Geography</h3>
@@ -104,28 +159,17 @@ In in sollicitudin sapien. Nulla elementum mi sit amet tellus suscipit vulputate
 </p></div>
 
 
+		</div>
+	</div>
 
-        </div>
+</div>
 
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">Define Your Report</h4>
-      </div>
       <div class="modal-body">
 
-            <ul class="nav nav-tabs">
-              <li class="active"><a href="#product-filter" data-toggle="tab">Products</a></li>
-              <li><a href="#geo-filter" data-toggle="tab">Geography</a></li>
-              <li><a href="#seg-filter" data-toggle="tab">Segment</a></li>
-              <li><a href="#size-filter" data-toggle="tab">Company Size</a></li>
-            </ul>
-
-            <div class="tab-content">
-              <div class="tab-pane active" id="product-filter">
                 <div class="row">
                     <div class="col-sm-6">
                         <h4>Choose Products:</h4>
@@ -142,13 +186,25 @@ In in sollicitudin sapien. Nulla elementum mi sit amet tellus suscipit vulputate
                     </div>
                     <div class="col-sm-6">
                         <h4>Included in the report:</h4>
-                        <h4><span class="label label-primary">Abrasives x</span> </h4>
-                        <h4><span class="label label-primary">Chemicals x</span> </h4>
-                        <h4><span class="label label-primary">Brushes x</span></h4>
+                        <h4><span class="label label-default">Abrasives x</span> </h4>
+                        <h4><span class="label label-default">Chemicals x</span> </h4>
+                        <h4><span class="label label-default">Brushes x</span></h4>
                     </div>
                 </div>
-              </div>
-              <div class="tab-pane" id="geo-filter">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="geoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+
                 <div class="row">
                     <div class="col-sm-6">
                         <h4>Choose Geography:</h4>
@@ -165,120 +221,12 @@ In in sollicitudin sapien. Nulla elementum mi sit amet tellus suscipit vulputate
                     </div>
                     <div class="col-sm-6">
                         <h4>Included in the report:</h4>
-                        <h4><span class="label label-primary">US - Arizona - Pima x</span></h4>
-                        <h4><span class="label label-primary">US - Arizona - Maricopa x</span></h4> 
-                        <h4><span class="label label-primary">US - Colorado - Boulder x</span></h4> 
-                        <h4><span class="label label-primary">US - Colorado - Denver x</span></h4> 
+                        <h4><span class="label label-default">US - Arizona - Pima x</span></h4>
+                        <h4><span class="label label-default">US - Arizona - Maricopa x</span></h4> 
+                        <h4><span class="label label-default">US - Colorado - Boulder x</span></h4> 
+                        <h4><span class="label label-default">US - Colorado - Denver x</span></h4> 
                     </div>
                 </div>
-              </div>
-              <div class="tab-pane" id="seg-filter">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h4>Choose Customer Segments:</h4>
-                        <form role="form">
-                          <div class="form-group">
-                            <div class="btn-group" data-toggle="buttons">
-                              <label class="btn btn-default">
-                                <input type="radio" name="options" id="option1"> SIC
-                              </label>
-                              <label class="btn btn-default">
-                                <input type="radio" name="options" id="option2"> NAICS
-                              </label>
-                            </div>  
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="exampleInputEmail1">Search</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search for a SIC or NAICS...">
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="exampleInputPassword1">Code</label>
-                            <textarea class="form-control" rows="10">SIC or NAICS selection tree</textarea>
-                          </div>
-                        </form>
-                    </div>
-                    <div class="col-sm-6">
-                        <h4>Included in the report:</h4>
-                        <h4><span class="label label-primary">1200-1399 x</span></h4>
-                        <h4><span class="label label-primary">1500 x</span></h4> 
-                        <h4><span class="label label-primary">2000-3999 x</span></h4> 
-                        <h4><span class="label label-primary">4500-5000 x</span></h4> 
-                    </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="size-filter">
-                <h4>Choose Company Size</h4>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
-                    1-9 Employees
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
-                    10-19 Employees
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
-                    20-49 Employees
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
-                    50-99 Employees
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
-                    100-499 Employees
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
-                    500-999 Employees
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
-                    1000+ Employees
-                  </label>
-                </div>
-
-
-              </div>
-            </div>
-
-
-        <div id="product-filter" class="filter">
-            <div class="container">
-            </div>
-        </div>
-        <div id="geo-filter" class="filter">
-            <div class="container">
-            </div>
-        </div>
-        <div id="seg-filter" class="filter">
-            <div class="container">
-            </div>
-        </div>
-        <div id="size-filter" class="filter">
-            <div class="container">
-            <h4>Choose Company Sizes</h4>
-              <button type="submit" class="btn btn-primary update-btn">Update Report</button>
-              <a href="#">Discard Changes</a>
-
-            </div>
-        </div>
-
-
-
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -287,4 +235,3 @@ In in sollicitudin sapien. Nulla elementum mi sit amet tellus suscipit vulputate
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
