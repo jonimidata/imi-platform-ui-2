@@ -1,3 +1,7 @@
+#filter-bar.well {
+	padding: 9px;
+}
+
 #filter-bar-label {
   font-size: 0.9em; 
   font-weight:bold;
@@ -18,4 +22,8 @@
 .filter-btn h5 {
   font-weight: bold;
   margin-top: 0;
+}
+
+#filters {
+  display :none;
 }
